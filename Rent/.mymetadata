@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Rent"
+  id="myeclipse.1444786477108"
+  context-root="/Rent"
+  j2ee-spec="5.0"
+  archive="Rent.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

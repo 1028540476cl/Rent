@@ -1,0 +1,6 @@
+<style type="text/css">
+*{ margin:0; padding:0;}
+#mainBox{ width:670px; height:300px; border:1px #FAFCF5 solid; position:relative; overflow:hidden; margin:50px auto;}
+#content{  height:2500px; position:absolute; left:0; top:0;}
+.scrollDiv{ width:18px;  position:absolute; top:0; background:#666; border-radius:10px;}
+</style>

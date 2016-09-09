@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="cl" namespace="/rent" extends="struts-default">
+	<action name="goindex" class="cn.cl.rent.top.action.TopAction">
+		<result name="index">/jsps/indexTemp.jsp</result>
+	</action>
+	<action name="searchindex" class="cn.cl.rent.goods.Action.GoodsAction">
+		<result name="searchGoods">/jsps/indexTemp.jsp</result>
+		<result name="detailsGoods">/jsps/indexTemp.jsp</result>
+		<result name="addGoods">/jsps/indexTemp.jsp</result>
+		<result name="addInfoSuccess">/jsps/indexTemp.jsp</result>
+		<result name="addInfo">/jsps/indexTemp.jsp</result>
+		<result name="searchSuccess">/jsps/indexTemp.jsp</result>
+	</action>
+	<action name="userindex" class="cn.cl.rent.user.Action.UserAction">
+		<result name="login">/adminjsps/admin/login.jsp</result>
+		<result name="loginOut" type="redirectAction">goindex</result>
+		<result name="main">/adminjsps/AdminTemp.jsp</result>
+	</action>
+	<action name="adminindex" class="cn.cl.rent.goods.Action.GoodsadminAction">
+		<result name="searchGoods">/adminjsps/AdminTemp.jsp</result>
+		<result name="checkGoods">/adminjsps/AdminTemp.jsp</result>
+		<result name="jiemian">/adminjsps/AdminTemp.jsp</result>
+	</action>
+	</package>
+</struts>
